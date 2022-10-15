@@ -316,6 +316,11 @@ img {
   vertical-align: middle;
   position: relative;
 }
+
+.contact-title {
+  display: flex;
+}
+
 .title-wrap > p {
   letter-spacing: 2px;
 }
@@ -505,6 +510,7 @@ a.white-arrow {
 .pad-50 {
   padding-bottom: 50px;
   padding-top: 50px;
+  margin-top: 150px;
 }
 .pb-50 {
   padding-bottom: 50px;
@@ -645,6 +651,7 @@ label {
   font-weight: 300;
   text-transform: uppercase;
 }
+
 textarea.form-control {
   height: auto;
 }
@@ -1122,10 +1129,10 @@ a:hover,
   background-color: rgba(255, 255, 255, 0.731);
 }
 .header-style2 .navbar-toggle {
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
 }
 .header-style2 .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  background-color: #000;
 }
 /*-------------------- Header Style-2 Ends -------------------- */
 
@@ -1276,6 +1283,12 @@ a:hover,
   margin-top: 40px;
   width: 100%;
 }
+
+.form-application {
+  display: flex;
+  justify-content: center;
+}
+
 .calculate {
   position: relative;
 }
@@ -2343,7 +2356,9 @@ a:hover,
 .footer-main {
   background-color: #e2dfdf;
 }
-
+.footer-main .row {
+  display: flex;
+}
 .footer-widget ul li a {
   font-size: 12px;
   text-transform: uppercase;
@@ -2360,7 +2375,8 @@ a:hover,
 }
 
 .footer-widget {
-  width: 25%;
+  width: 100%;
+  text-align: center;
 }
 .social-icons li a {
   border: 2px solid #656565;
@@ -2579,7 +2595,9 @@ a:hover,
 }
 @media (max-width: 767px) {
   /*---------------- Global properties (body, common classes, structure etc) Starts ----------------------*/
-
+  .footer-main .row {
+    display: block;
+  }
   .wow {
     animation-name: none !important;
     visibility: visible !important;
@@ -2702,10 +2720,15 @@ a:hover,
   }
 
   .header-style2 .menu-bar {
-    background-color: #222222;
+    background-color: #fff;
+    border-bottom: 1px solid #222;
+  }
+
+  .menu-bar img {
+    width: 50%;
   }
   .header-style2 .theme-menu .dropdown-menu > li > a {
-    color: #ffffff;
+    color: #fd4819;
   }
 
   .top-bar2 .navbar-logo {
@@ -2713,6 +2736,7 @@ a:hover,
     margin: auto auto 15px;
     text-align: center;
   }
+
   .top-bar2 ul {
     text-align: center;
   }
@@ -2747,14 +2771,17 @@ a:hover,
     width: 70%;
   }
   .delivery-img {
-    bottom: 0;
-    left: 15px;
+    position: relative;
+    /* bottom: 0; */
+    /* left: 15px; */
     margin: auto;
     right: 15px;
     top: 0;
     text-align: center;
   }
-
+  .contact-wrap {
+    display: none;
+  }
   .feature-2 .col-sm-4:nth-child(-n + 2) {
     margin-bottom: 25px;
   }

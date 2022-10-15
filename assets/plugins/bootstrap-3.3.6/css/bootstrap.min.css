@@ -1845,9 +1845,9 @@ pre code {
   .col-sm-6,
   .col-sm-7,
   .col-sm-8,
-  .col-sm-9 {
+  /* .col-sm-9 {
     float: left;
-  }
+  } */
   .col-sm-12 {
     width: 100%;
   }
@@ -1858,7 +1858,7 @@ pre code {
     width: 83.33333333%;
   }
   .col-sm-9 {
-    width: 75%;
+    width: 100%;
   }
   .col-sm-8 {
     width: 66.66666667%;
@@ -1876,7 +1876,8 @@ pre code {
     width: 33.33333333%;
   }
   .col-sm-3 {
-    width: 25%;
+    width: 100%;
+    margin-bottom: 15px;
   }
   .col-sm-2 {
     width: 16.66666667%;
@@ -2039,7 +2040,7 @@ pre code {
     width: 50%;
   }
   .col-md-5 {
-    width: 41.66666667%;
+    width: 50%;
   }
   .col-md-4 {
     width: 33.33333333%;
@@ -2164,9 +2165,9 @@ pre code {
   .col-md-offset-2 {
     margin-left: 16.66666667%;
   }
-  .col-md-offset-1 {
+  /* .col-md-offset-1 {
     margin-left: 8.33333333%;
-  }
+  } */
   .col-md-offset-0 {
     margin-left: 0;
   }
