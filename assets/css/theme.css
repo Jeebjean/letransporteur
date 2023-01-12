@@ -652,6 +652,19 @@ label {
   text-transform: uppercase;
 }
 
+.form-control_1 {
+  background-color: #ffffff;
+  border-color: #e7e8ec;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #c7c7c7;
+  font-size: 14px;
+  height: 46px;
+  padding: 10px 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 textarea.form-control {
   height: auto;
 }
@@ -1262,6 +1275,7 @@ a:hover,
 }
 .feature-2 {
   border-bottom: 1px solid #eaeaea;
+  padding: 50px 0;
 }
 .feature-2::before {
   bottom: 0;
@@ -1274,6 +1288,10 @@ a:hover,
   position: absolute;
   right: 0;
   width: 70%;
+}
+
+.space div {
+  margin: 10px 0;
 }
 /*-------------------- 3.3 - About Us Ends -------------------- */
 
@@ -1371,14 +1389,20 @@ a:hover,
 
 /*-------------------- 3.5 - Steps Starts -------------------- */
 .steps-wrap {
-  background-color: #bbbbbb;
   margin: 150px 0px;
+  padding: 100px 0;
+  background-image: url("../photo/5.JPEG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-position: center center;
 }
 .steps-wrap .row div {
   color: #ffffff;
   display: inline-block;
   vertical-align: middle;
   z-index: 1;
+  text-align: left;
 }
 .steps-content {
   margin-left: 15px;
