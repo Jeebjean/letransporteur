@@ -1393,6 +1393,7 @@ a:hover,
   padding: 100px 0;
   background-image: url("../photo/5.JPEG");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   background-position: center center;
@@ -1416,6 +1417,65 @@ a:hover,
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.bg-1 {
+  background-image: url(../photo/banner2.JPEG);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 250px;
+  padding: 0 10px;
+}
+
+.bg-2 {
+  background-image: url(../photo/5.JPEG);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 250px;
+}
+
+.bg-3 {
+  background-image: url(../photo/16.JPEG);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 250px;
+}
+
+@media (min-width: 767px) {
+  .bg-1,
+  .bg-2,
+  .bg-3 {
+    width: 32%;
+    margin-right: 10px;
+  }
+}
+
+.opacity::before {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  background-color: #1b0601c5;
+}
+
+.opacity {
+  position: relative;
+}
+
+.more-about p {
+  color: #ffffffd2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.more-about h2 {
+  color: #f4511e;
+  font-size: 20px;
 }
 
 /*-------------------- 3.5 - Steps Ends -------------------- */
@@ -1467,6 +1527,7 @@ a:hover,
   background-image: url("../photo/bg_testimonia.JPEG");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   text-align: center;
   background-position: center center;
 }
@@ -2174,7 +2235,7 @@ a:hover,
   border-bottom: 0;
 }
 .more-about {
-  border: 1px solid #eaeaea;
+  /* border: 1px solid #eaeaea; */
   padding: 28px 35px 18px;
 }
 .more-about:before {
@@ -2289,7 +2350,7 @@ a:hover,
 /*-------------------- 6.2 - Tracking Page Ends -------------------- */
 
 /*-------------------- 6.3 - Contact Page  Starts -------------------- */
-.contact-form::before {
+/* .contact-form::before {
   background-color: #e5e5e5;
   bottom: 0;
   content: "";
@@ -2299,13 +2360,17 @@ a:hover,
   position: absolute;
   top: 0;
   width: 1px;
+} */
+
+.contact-page .contact-detail_container {
+  width: 50%;
 }
-.contact-page .contact-detail span {
+/* .contact-page .contact-detail span {
   width: 40%;
-}
-.contact-page .contact-detail p {
+} */
+/* .contact-page .contact-detail p {
   width: 58%;
-}
+} */
 .contact-map {
   position: relative;
 }
@@ -2950,11 +3015,16 @@ a:hover,
   /*---- Contact us Starts ---*/
   .contact-detail span,
   .contact-2 .contact-detail span {
-    width: 50%;
+    width: 100%;
+    margin-bottom: 10px;
   }
   .contact-detail p,
   .contact-2 .contact-detail p {
-    width: 48%;
+    width: 100%;
+  }
+
+  .contact-page .contact-detail_container {
+    width: 100%;
   }
   .contact-2 .contact-detail > li {
     padding-left: 0;
