@@ -1393,11 +1393,17 @@ a:hover,
   padding: 100px 0;
   background-image: url("../photo/5.JPEG");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   background-position: center center;
 }
+
+@media screen and (min-width: 767px) {
+  .steps-wrap {
+    background-attachment: fixed;
+  }
+}
+
 .steps-wrap .row div {
   color: #ffffff;
   display: inline-block;
@@ -1527,9 +1533,14 @@ a:hover,
   background-image: url("../photo/bg_testimonia.JPEG");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
   background-position: center center;
+}
+
+@media screen and (min-width: 767px) {
+  .testimonial {
+    background-attachment: fixed;
+  }
 }
 
 .testimonial-img span {
