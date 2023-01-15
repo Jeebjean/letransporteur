@@ -16,7 +16,9 @@
     <link rel="stylesheet" type="text/css" href="assets/plugins/font-elegant/elegant.css">
     <!-- OwlCarousel2 Slider Css -->
     <link rel="stylesheet" type="text/css" href="assets/plugins/owl.carousel.2/assets/owl.carousel.css">
-
+    <!-- Form -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
     <!-- Animate Css -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -92,7 +94,6 @@
                                             <li><a href="partenaire.html">Devenir Patenaire</a>
                                             </li>
                                             <li><a href="staff.html">Rejoindre l’Équipe</a></li>
-                                            <!-- <li><a href="livreur.html">Devenir livreur</a></li> -->
                                         </ul>
                                     </li>
                                     <li>
@@ -102,10 +103,13 @@
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                             aria-haspopup="true">Pays</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Bénin 🇧🇯 </a></li>
-                                            <li><a href="#">Congo 🇨🇩 </a></li>
-                                            <li><a href="#">Togo 🇹🇬 </a></li>
+                                            <li><a href="index.html">Bénin 🇧🇯 </a></li>
+                                            <li><a href="index_Congo.html">Congo 🇨🇩 </a></li>
+                                            <li><a href="index_Togo.html">Togo 🇹🇬 </a></li>
                                         </ul>
+                                    </li>
+                                    <li>
+
                                     </li>
                                 </ul>
                             </div>
@@ -170,9 +174,17 @@
                                     </div>
                                     <div class="form-group wow fadeInUp" data-wow-offset="50" data-wow-delay=".30s">
                                         <div class="col-sm-3"> <label class="title-2"> N° de téléphone *: </label></div>
-                                        <div class="col-sm-9"> <input type="text" name="Phone" id="Phone" required
+                                        <div class="col-sm-9"> <input type="text" name="phone" id="phone" required
                                                 placeholder="" class="form-control"> </div>
                                     </div>
+
+                                    <script>
+                                        const phoneInputField = document.querySelector("#phone");
+                                        const phoneInput = window.intlTelInput(phoneInputField, {
+                                            utilsScript:
+                                                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+                                        });
+                                    </script>
 
                                     <div class="form-group wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
                                         <div class="col-sm-3"> <label class="title-2"> Objet du partenariat *: </label>
@@ -233,8 +245,16 @@
                             <h2 class="title-1 fw-900">Lien rapide</h2>
                             <ul>
                                 <li> <a href="contact.html">Contacter nous</a> </li>
-                                <li> <a href="#">Partenaire</a> </li>
+                                <li> <a href="partenaire.html">Partenaire</a> </li>
                                 <li> <a href="#">Apps</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 footer-widget">
+                            <h2 class="title-1 fw-900">Pays</h2>
+                            <ul>
+                                <li> <a href="index.html">Benin</a> </li>
+                                <li> <a href="index_Congo.html">Congo</a> </li>
+                                <li> <a href="index_Togo.html">Togo</a> </li>
                             </ul>
                         </div>
                         <div class="col-md-3 col-sm-6 footer-widget">
@@ -269,8 +289,10 @@
                         <script>
                             document.write(new Date().getFullYear());
                         </script>
-                        LE TRANSPORTEUR<br> <br> Designed by <a style="color: #fd4819;"
-                            href="https://jeeb.info/">JeebJean</a>
+                        <a href="https://www.groupe-seed.com/"
+                            style="text-align: center; font-size: 13px; color: #fd4819;">SEED GROUPE</a><br> <br>
+                        Designed by <a style="
+                            color: #fd4819;" href="https://jeeb.info/">JeebJean</a>
                     </div>
                 </div>
             </div>

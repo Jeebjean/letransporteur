@@ -1135,6 +1135,10 @@ a:hover,
   height: 1px;
   width: 20px;
 }
+
+.flag {
+  font-size: 16px;
+}
 /*-------------------- Menu Bar Ends -------------------- */
 
 /*-------------------- Header Style-2 Starts -------------------- */
