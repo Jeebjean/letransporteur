@@ -1403,7 +1403,8 @@ a:hover,
 }
 
 @media screen and (min-width: 767px) {
-  .steps-wrap {
+  .steps-wrap,
+  .about_bg {
     background-attachment: fixed;
   }
 }
@@ -1430,7 +1431,7 @@ a:hover,
 }
 
 .bg-1 {
-  background-image: url(../photo/banner2.JPEG);
+  background-image: url(../photo/bg1.jpeg);
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -1438,8 +1439,17 @@ a:hover,
   padding: 0 10px;
 }
 
+.about_bg {
+  background-image: url(../photo/about_bg1.jpeg);
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+  height: auto;
+  padding: 120px 10px;
+}
+
 .bg-2 {
-  background-image: url(../photo/5.JPEG);
+  background-image: url(../photo/bg2.jpeg);
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -1461,6 +1471,10 @@ a:hover,
     width: 32%;
     margin-right: 10px;
   }
+}
+
+.star {
+  color: red;
 }
 
 .opacity::before {
