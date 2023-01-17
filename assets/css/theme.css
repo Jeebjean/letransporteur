@@ -1393,8 +1393,8 @@ a:hover,
 
 /*-------------------- 3.5 - Steps Starts -------------------- */
 .steps-wrap {
-  margin: 150px 0px;
-  padding: 100px 0;
+  margin: 0 0 150px 0px;
+  padding: 40px 0;
   background-image: url("../photo/5.JPEG");
   background-repeat: no-repeat;
   background-size: cover;
